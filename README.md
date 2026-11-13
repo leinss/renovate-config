@@ -17,7 +17,7 @@ Then enable the [Renovate GitHub App](https://github.com/apps/renovate) on the r
 ## Policy summary
 
 - **`minimumReleaseAge: "7 days"`** — wait 7 days after a package version is published before opening a PR. Mitigates supply-chain attacks where compromised versions are caught and yanked within hours/days of publication.
-- **Schedule:** Monday before 6am (Europe/Berlin) — batched weekly.
+- **Schedule:** Monday before 9am (Europe/Berlin), batched weekly.
 - **Grouping:** minor & patch updates batched into a single weekly PR; `@types/*` grouped separately.
 - **Security overrides:** `vulnerabilityAlerts.minimumReleaseAge: "0 days"` — security patches bypass cooldown and ship immediately.
 - **Limits:** max 5 concurrent open PRs, max 2 created per hour.
